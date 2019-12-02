@@ -26,13 +26,19 @@ function updateTable(){
 
     var text = document.getElementById("text").value;
     var hours = document.getElementById("nr").value;
+    var color = document.getElementsByName("radioChoice");
 
     for(var i = myRowIndex; i < Number(myRowIndex) + Number(hours-1); i++){
         var a = document.getElementById(i.toString());
         a.deleteCell(myCellIndex);
     }
 
-    // e.target.style.backgroundColor = color;
+    for (var i = 0; i < color.length; i++){
+        if (color[i].checked){
+            element.target.style.backgroundColor = color[i].value;
+        }
+    }
+    
     element.target.rowSpan = hours;
     element.target.textContent = text;
     

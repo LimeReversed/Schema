@@ -21,3 +21,13 @@ function getInfo(e)
         e.target.textContent = text;
     }
 }
+$(document).ready(()=>{
+    $('td').on('click', ()=>{
+        $('#formContainer').show();
+    });
+
+    $('#btnSubmit').on('click', ()=>{
+        $('#formContainer').hide();
+
+    });
+});

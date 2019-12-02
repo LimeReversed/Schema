@@ -3,8 +3,8 @@ table.onclick = getInfo;
 function getInfo(e)
 {
     if (e.target.tagName == "TD"){
-        //var text = prompt("Insert text");
-        //var hours = prompt("Insert hours");
+        var text = document.getElementById("text").value;
+        var hours = document.getElementById("nr").value;
         //var color = prompt("Insert color : Red, blue, green");
         
         var minTable = document.getElementById('table');

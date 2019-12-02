@@ -32,3 +32,7 @@ td{
 tr:nth-child(odd){
     background-color: lightgray;
 }
+
+#formContainer{
+    display: none;
+}

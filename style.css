@@ -35,4 +35,24 @@ tr:nth-child(odd){
 
 #formContainer{
     display: none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.5s;
+  position: absolute;
+  left: 100px;
+  text-align: left;
 }
+
+
+
+@-webkit-keyframes example {
+    0% {left:-100px;opacity: 0;}
+    100% {left:100px;opacity:1;}
+  }
+  
+  /* Add animation (Standard syntax) */
+  @keyframes example {
+    0% {left:-100px;opacity: 0;}
+    100% {left:100px;opacity:1;}
+  }

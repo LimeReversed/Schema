@@ -3,9 +3,9 @@ table.onclick = getInfo;
 function getInfo(e)
 {
     if (e.target.tagName == "TD"){
-        var text = prompt("Insert text");
-        var hours = prompt("Insert hours");
-        var color = prompt("Insert color : Red, blue, green");
+        //var text = prompt("Insert text");
+        //var hours = prompt("Insert hours");
+        //var color = prompt("Insert color : Red, blue, green");
         
         var minTable = document.getElementById('table');
         var myRowIndex = e.target.parentElement.rowIndex + 1;
@@ -21,3 +21,13 @@ function getInfo(e)
         e.target.textContent = text;
     }
 }
+$(document).ready(()=>{
+    $('td').on('click', ()=>{
+        $('#formContainer').show();
+    });
+
+    $('#btnSubmit').on('click', ()=>{
+        $('#formContainer').hide();
+
+    });
+});

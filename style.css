@@ -12,13 +12,21 @@ table{
 
 td, th{
     padding: 10px;
-    border-right: solid 1px black;    
+    border-right: solid 1px black; 
 }
 
 th{
     background-color: darkgreen;
     color: white;
     font-weight: unset;
+}
+td{
+    color: black;   
+
+}
+.cellTest{
+    background-color: red;
+    color: white;
 }
 
 tr:nth-child(odd){

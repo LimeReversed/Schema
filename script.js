@@ -1,5 +1,6 @@
 table.onclick = getInfo;
 
+
 function getInfo(e)
 {
     if (e.target.tagName == "TD"){

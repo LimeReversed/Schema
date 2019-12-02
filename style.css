@@ -1,16 +1,26 @@
 ﻿body
 {
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 table{
     display: inline-block;
     border-collapse: collapse;
+    border-bottom: solid 1px black;
 }
-
-
 
 td, th{
     padding: 10px;
-    border: solid 1px black;
+    border-right: solid 1px black;    
+}
+
+th{
+    background-color: darkgreen;
+    color: white;
+    font-weight: unset;
+}
+
+tr:nth-child(odd){
+    background-color: lightgray;
 }

@@ -12,7 +12,8 @@ table{
 
 td, th{
     padding: 10px;
-    border-right: solid 1px black; 
+    border-right: solid 1px black;
+    border-bottom: solid 1px black; 
 }
 
 th{
@@ -36,12 +37,12 @@ tr:nth-child(odd){
 #formContainer{
     display: none;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-  animation-name: example;
-  animation-duration: 0.5s;
-  position: absolute;
-  left: 100px;
-  text-align: left;
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.5s;
+    position: absolute;
+    left: 100px;
+    text-align: left;
 }
 
 

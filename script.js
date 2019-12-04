@@ -1,3 +1,4 @@
+
 var currentTarget;
 
 var allTableDataCells = document.getElementsByTagName("td");
@@ -99,4 +100,5 @@ function checkIfValidInput () {
     }
 
     return isValid;
+
 }

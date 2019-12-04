@@ -23,7 +23,7 @@ function addActivity () {
         
         var text = document.getElementById("text").value;
         var desiredRowSpan = document.getElementById("nr").value;
-        var desiredColor = document.querySelector('input[name="radioChoise"]:checked').value;
+        var desiredColor = document.querySelector('input[name="radioChoice"]:checked').value;
         
         //Setting the values from the form
         currentTarget.textContent = text;

@@ -1,12 +1,59 @@
 ﻿body
 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 table{
+    display: inline-block;
     border-collapse: collapse;
+    border-bottom: solid 1px black;
 }
 
-td{
+td, th{
     padding: 10px;
-    border: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black; 
 }
+
+th{
+    background-color: darkgreen;
+    color: white;
+    font-weight: unset;
+}
+td{
+    color: white;   
+
+}
+.cellTest{
+    background-color: red;
+    color: white;
+}
+
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+#formContainer{
+    display: none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 0.5s;
+    position: absolute;
+    left: 100px;
+    text-align: left;
+}
+
+
+
+@-webkit-keyframes example {
+    0% {left:-100px;opacity: 0;}
+    100% {left:100px;opacity:1;}
+  }
+  
+  /* Add animation (Standard syntax) */
+  @keyframes example {
+    0% {left:-100px;opacity: 0;}
+    100% {left:100px;opacity:1;}
+  }

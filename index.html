@@ -4,262 +4,175 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title></title>
 </head>
 <body>
+
+        <div id="formContainer">
+                <form>
+                    <label for = "text">Type your activity...</label><br>
+                    <input id = "text" type="text"><br><br>
+                    
+                    <label for = "nr">Choose how many hours...</label><br>
+                    <input id = "nr" type="number" step="1"><br><br>
+                    
+                    <label for = "color">Choose a color...</label><br>
+                    <label for = "red">Red</label>
+                    
+                    <input id= "red" type="radio" value="red" name="radioChoice" checked>
+
+                    <label for = "blue">Blue</label>
+                    <input id= "blue" type="radio" value="blue" name="radioChoice">
+                    <label for = "green">Green</label>
+                    <input id= "green" type="radio" value="green" name="radioChoice"><br><br>
+                    <input id = "btnSubmit" type="button" value ="click">
+                </form>
+            </div>
+
+
     <table id="table">
         <tr>
-            <td>
-                
-            </td>
-            <td>
-                Monday
-            </td>
-            <td>
-                Tisdag
-            </td>
-            <td>
-                Onsdag
-            </td>
-            <td>
-                Torsdag
-            </td>
-            <td>
-                Fredag
-            </td>
-            <td>
-                Lördag
-            </td>
-            <td>
-                Söndag
-            </td>
+            <th></th>
+            <th>Måndag</th>
+            <th>Tisdag</th>
+            <th>Onsdag</th>
+            <th>Torsdag</th>
+            <th>Fredag</th>
+            <th>Lördag</th>
+            <th>Söndag</th>
         </tr>
-        <tr>
-            <td>
-                08:00
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="1">
+            <th>08:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
 
         </tr>
-        <tr>
-            <td>09:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="2">
+            <th>09:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>10:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="3">
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>11:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="4">
+            <th>11:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>12:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="5">
+            <th>12:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>13:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="6">
+            <th>13:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>14:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="7">
+            <th>14:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>15:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="8">
+            <th>15:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>16:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="9">
+            <th>16:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>17:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="10">
+            <th>17:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>18:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="11">
+            <th>18:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>19:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="12">
+            <th>19:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-        <tr>
-            <td>20:00</td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
+        <tr id="13">
+            <th>20:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-
-
     </table>
 
     <script src= "script.js"></script>

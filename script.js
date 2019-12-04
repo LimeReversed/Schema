@@ -57,12 +57,8 @@ function removeActivity () {
     //Resetting the cell to be empty
     this.textContent = "";
     this.rowSpan = "1";
-    if((this.parentElement.rowIndex % 2) == 0){
-        this.style.backgroundColor = "lightgrey";
-    }
-    else{
-        this.style.backgroundColor = "white";
-    }
+    this.style.backgroundColor = "white";
+    
 
     //Inserting cells where the removal of rowspan left gaps
     var parent = this.parentElement;

@@ -16,7 +16,7 @@ body
 table{
     display: inline-block;
     border-collapse: collapse;
-    width: 70%;
+    width: 80%;
     background-image: url("math.jpg");
 }
 
